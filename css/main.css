@@ -1,0 +1,29 @@
+body {
+    height: 100%;
+}
+
+#board {
+    font-size: 3em;
+}
+
+#board .row {
+    border-bottom: 1px dotted silver;
+}
+#board .row:last-child {
+    border-bottom: 0;
+}
+#board .tile {
+    border-left: 1px dotted silver;
+    min-height: 20%;
+    height: 100px;
+    text-align: center;
+}
+
+#board .row .tile:first-child {
+    border: 0;
+}
+
+
+#board .tile:HOVER {
+    
+}

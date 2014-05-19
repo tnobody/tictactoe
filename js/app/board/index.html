@@ -1,0 +1,17 @@
+<div id="board" class="container-fluid">
+    <div class="row" ng-repeat="row in board.state track by $index">        
+        <div class="col-xs-4 tile" 
+             ng-repeat="v in row track by $index"
+             ng-click="setTo($parent.$index,$index)">
+            {{v}}
+        </div>
+    </div>
+</div>
+<button class="btn" ng-click="reset()">clear</button>
+<b>Winner:</b>{{board.winner}}
+<div id="isthinking" ng-show="npc.isTurning">
+    Your opponent is thinking...
+</div>
+<pre>
+    {{board|json}}
+</pre>
